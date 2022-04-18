@@ -32,8 +32,10 @@ export const Main = () => {
       <body id="back">
         <div>
           <h1>Search</h1>
-          <input id="search"/>
-          <button type="button" onClick={() => search()}>Search</button>
+          <form onsubmit={() => search()}>
+            <input id="search"/>
+            <input type="submit" value="Search"/>
+          </form>
           { (searchRecipes!=undefined) &&
           <div>
             <h3>Results:</h3>

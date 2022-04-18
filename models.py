@@ -247,9 +247,9 @@ class Database:
         else:
             ret = [{
                 "id": 0,
-                "name": "No",
+                "name": "",
                 "creator_id": 0,
-                "creator_name": "recipes"
+                "creator_name": "No recipes"
             }]
         return {"returning": ret}
 
