@@ -1,4 +1,8 @@
-https://cs490-p3-sprint2.herokuapp.com/
+https://crowd-cooking.herokuapp.com/
+
+This app was made to innovate new recipes by mixing the qualities of social media with a recipe website so that the user may recieve feedback and adjust their recipe accordingly.
+
+For future releases, I'd like to streamline the landing page, perhaps allowing users to swipe past/scroll past and potentially adding a "do not show me this again" option. I'd also like to add the ability to search for or sort foods easier. I think that would improve the user experience significantly and would make the app more scalable. 
 
 ## Requirements
 
@@ -8,7 +12,8 @@ https://cs490-p3-sprint2.herokuapp.com/
 
 ## Setup
 
-1. Run `echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" > .env.development.local` in the project directory
+1. Clone the repository with `git clone https://github.com/MatthewTreboschi/crowd-cooking.git`
+2. Run `echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" > .env.development.local` in the project directory
 
 ## Run Application
 
@@ -18,8 +23,7 @@ https://cs490-p3-sprint2.herokuapp.com/
 
 ## Deploy to Heroku
 
-_Don't do the Heroku step for assignments, you only need to deploy for Project 2_
-
 1. Create a Heroku app: `heroku create --buildpack heroku/python`
 2. Add nodejs buildpack: `heroku buildpacks:add --index 1 heroku/nodejs`
-3. Push to Heroku: `git push heroku main`
+3. Add database to heroku: `heroku addons:create heroku-postgresql:hobby-dev`
+4. Push to Heroku: `git push heroku main`
